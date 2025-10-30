@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@500&display=swap');
+
+:root {
+    --cor-primaria: #F5E5E1;
+    --cor-secundaria: #F9B487;
+    --cor-terciaria: #427A76;
+    --cor-quartenaria: #174143;
+    --cor-hover: rgb(159, 159, 159);
+
+    --fonte-primaria: 'Montserrat', sans-serif;
+    --fonte-secundaria: "Quicksand", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background-color: var(--cor-terciaria);
+    box-sizing: border-box;
+    font-family: var(--fonte-primaria);
+    background-position: center;
+    color: var(--cor-primaria);
+}
+
+  .cabecalho__menu {
+    margin-left: 50px;
+    display: flex;
+    margin-top: 20px;
+  }
+
+.cabecalho__menu__link {
+      font-size: 20px;
+      color: var(--cor-primaria);
+      border-style: solid;
+      border-color: var(--cor-primaria);
+      border-width: 1px;
+      border-radius: 10px 100px / 120px;;
+      padding: 5px;
+      margin: 20px;
+      text-decoration: none;
+}
+
+ .cabecalho__menu__link:hover {
+      color: var(--cor-hover);
+  }
+
+.titulo-blog {
+    font-family: var(--fonte-secundaria);    
+    font-weight: 600;
+    font-size: 35px;
+    color: var(--cor-secundaria);
+}
+
+.subtitulo-blog {
+    font-family: var(--fonte-secundaria);
+    font-weight: 200;
+    font-size: 20px;
+    color: var(--cor-secundaria);
+}
+
+.texto-blog {
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    gap: 32px;
+}
+
+.apresentacao__links_subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 280px;
+    border: solid 2px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: "Montserrat", sans-serif;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.apresentacao__links__link:hover {
+    border: 2px solid var(--cor-quartenaria);
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.retrato-vinicius {
+    background: var(--cor-primaria);
+    display: inline-block;
+    padding: 10px 10px 25px 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    max-width: 450px;
+}
+
+.rodape {
+    padding: 24px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 15px;
+    font-weight: 400;
+}
